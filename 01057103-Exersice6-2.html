@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Exersice6-2</title>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        * {
+            font-family: 'cwTeXKai', 'Montserrat';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 16px;
+            line-height: 28px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+
+        tr {
+            text-align: left;
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Prince of Xianle</span>
+                <span class="last-name">-Xielian</span>
+            </div>
+            <div class="contact-info">
+                <span class="phone">psychic password: </span>
+                <span class="phone-val">Just recite the Tao Te Ching a thousand times</span>
+            </div>
+
+            <div>
+                <img src="Xieliang.jpg" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">Corolla Valkyrie </span>
+                <span>
+                    Originally the prince of Xianle Kingdom, he saved the young Huacheng at the age of seventeen.
+                    In the same year, he defeated the ghost of Yi Nianqiao, and he was promoted to the god of war that
+                    night.
+                    After the fall of the Xianle Kingdom, he was demoted to the mortal world.
+                    After many years, he ascended for the second time.
+                    After ascending, he voluntarily gave up being a god, fought with Junwu, and was demoted after a
+                    stick of incense, becoming the laughing stock of the Three Realms.
+                    After another 800 years, the third time to ascend and meet Huacheng again. After many difficulties
+                    and obstacles, Huacheng finally helped Xie Lian defeat Bai Wuxiang, but he turned into a butterfly
+                    and disappeared because he gave Xie Lian too much mana.
+                    After more than a year, Huacheng returned and walked hand in hand with Xie Lian.<br><br><a
+                        href="https://baike.baidu.hk/item/%E8%AC%9D%E6%86%90/22186778">Click me to know more</a>
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Xianle Kingdom</div>
+                            <div>Heir of Xianle Kingdom</div>
+                            <div class="duration">one year old - seventeen years old</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Prince of Xianle</div>
+                            <div>Everyone admires</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Heaven</div>
+                            <div>defeated the ghost of Yi Nianqiao, and he was promoted to the god of war that night
+                            </div>
+                            <div class="duration">seventeen years old - twenty years old </div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Celestial Being</div>
+                            <div>Everyone admires</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Yongan Kingdom</div>
+                            <div>He was highly appreciated by the then Prince of Yongan Kingdom, Lang Qianqiu, and
+                                worshipped him as his teacher.</div>
+                            <div class="duration">twenty years old - unknown</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Guoshi</div>
+                            <div>Teach the prince</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Bengyue Kingdom</div>
+                            <div>He was captured by Banyue Kingdom to join the army. He was invincible in battle and was
+                                honored as General Hua, but after that, the more he fight, the more he let go, and he
+                                has been demoted.</div>
+                            <div class="duration">unknown</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Army General</div>
+                            <div>Save the common people</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Displaced</div>
+                            <div>unknown</div>
+                            <div class="duration">unknown - eight hundred years old</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Tattered God</div>
+                            <div>Pick up junk everywhere</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Heaven</div>
+                            <div>His selflessness made him ascend for the third time</div>
+                            <div class="duration">eight hundred years old - now</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Celestial Being</div>
+                            <div>Save the common people</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__title">Record</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">Defeat the haunting ghost on the bridge</div>
+                        <div class="text">At the age of seventeen, he saved a child, Huacheng, (about 10 years old) who
+                            fell from the city wall in the Shangyuan Festival Tour. In the same year, he defeated the
+                            haunting ghost on Yinian Bridge, and said the famous phrase "my body is still in inferno but
+                            my mind already in heaven", and planted a flower tree to meet the emperor Shenwu who came to
+                            subdue the demon.</div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="name">Defeat the ghost king, Bai Wuxiang</div>
+                        <div class="text">When Xie Lian, Huacheng and a group of priests entered the copper furnace to
+                            exterminate the new evil ghost king, they explored the truth of the past step by step. Mei
+                            Nianqing revealed the identity of Junwu in front of everyone in the Shenwu Hall. Later Junwu
+                            wants to cleanse the heavens and launch a human face epidemic. Everyone had a fierce fight
+                            with Junwu, and finally defeated Junwu and suppressed him under Tonglu Mountain.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                swallow sword
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" />
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            boulder in chest</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            Soul-moving Dafa</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" checked />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            Turning fighters into hurt oneself</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" checked />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" checked />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    weapon
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <table style="border:5px  firebrick double;padding:5px;" rules="all" cellpadding='5' ;>
+                            <tr>
+                                <th>NAME</th>
+                                <th>ORIGIN</th>
+                                <th>PHOTO</th>
+                            </tr>
+                            <tr>
+                                <td>Ruoye silk</td>
+                                <td>Once the weapon of Junwu (formerly known as Zhu Xin), an old sword. It is slender
+                                    and slender, like forged from black jade. It is deep and deep, and it is smoother
+                                    than a mirror. If someone approaches, it can show a clear reflection of itself on
+                                    the sword. Only a thin silver white in the heart of the sword runs through most of
+                                    the sword.</td>
+                                <td><img src="Ruoye.jpg" width="100%"></td>
+                            </tr>
+                            <tr>
+                                <td>Fangxin sword</td>
+                                <td>It was made from the white silk that was used by the king and queen of Xianle
+                                    Kingdom (thanks to his parents) to hang himself. It was contaminated with the blood
+                                    and resentment of the royal family of Xianle Kingdom. Transformable and conscious.
+                                </td>
+                                <td><img src="Fangxin.jpg" width="100%"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        Share health tips
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    人際關係
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <table style="border:5px firebrick double;padding:5px;" rules="all" cellpadding='5' ;>
+                            <tr>
+                                <th>NAME</th>
+                                <th>故事</th>
+                            </tr>
+                            <tr>
+                                <td>花城</td>
+                                <td>幼時被謝憐所救，在謝憐被貶時幫助他，八百年後成為絕境鬼王處處保護謝憐，心繫謝憐。</td>
+                            </tr>
+                            <tr>
+                                <td>君吾</td>
+                                <td>混蛋Boss，希望謝憐能繼承他的位置，表面對他好，實際上混蛋事都他搞出來的。</td>
+                            </tr>
+                            <tr>
+                                <td>慕情</td>
+                                <td>原為仙樂國皇極觀中一掃地雜役，出身貧苦，後因受到在皇極觀修行的太子謝憐的賞識得以修煉，最終飛昇成為坐鎮西南的武神，號玄真將軍。</td>
+                            </tr>
+                            <tr>
+                                <td>風信</td>
+                                <td>仙樂太子的心腹下屬，貼身侍衞，一起長大、登天、被貶和流放。後來沒能熬過一齊被貶的八百年，最後不歡而散，與謝憐分道揚鑣。之後自己渡劫飛昇，成為坐鎮東南的武神，號南陽真君。
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    資料來源
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        出自中國小說作家，墨香銅臭，的作品《天官賜福》<br>
+                        <br>其劇情簡介 :八百年前，謝憐是金枝玉葉的太子殿下，風光無限的天之驕子。誰知一朝得道飛昇，成為萬人供奉的武神後，命途竟是急轉直下，一貶再貶貶無可貶。
+                        八百年後，謝憐又雙叒飛昇了，這一次沒有信徒也沒有香火。
+                        某日收破爛歸來的路上，他將一個神秘少年撿回家中，而這少年，居然就是那位三界談之色變的鬼王——花城。
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    天官賜福第二季PV
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MXQOM5aoX-A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
